@@ -1,5 +1,11 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .background-radial-gradient {
-  background-color: hsl(218, 41%, 15%);
+  background-color: #053b50;
   background-image: radial-gradient(
       650px circle at 0% 0%,
       hsl(218, 41%, 35%) 15%,
@@ -42,6 +48,112 @@
   overflow: hidden;
 }
 
+#box1 {
+  width: 14vw;
+  height: 14vw;
+  right: -55px;
+  top: -80px;
+}
+
+#more {
+  display: none;
+}
+
+#wave1 {
+  --s: 35px; /* the size of the wave */
+  --b: 15px; /* the thickness of the line*/
+  bottom: 130px;
+  left: -40px;
+  height: calc(2 * var(--s));
+  aspect-ratio: 2.5;
+  display: grid;
+  padding: 0px;
+  filter: contrast(20) hue-rotate(20deg);
+}
+#wave1::before {
+  content: "";
+  --_g: calc(-0.6 * var(--s)), #0000 calc(99% - var(--b)),
+    #ffffff calc(101% - var(--b)) 99%, #0000 101%;
+  --_r: calc(1.166 * var(--s) + var(--b) / 2) at left 50%;
+  background: radial-gradient(var(--_r) bottom var(--_g)) calc(50% - var(--s))
+      calc(50% - var(--s)) / calc(4 * var(--s)) calc(2 * var(--s)),
+    radial-gradient(var(--_r) top var(--_g)) calc(50% + var(--s))
+      calc(50% + var(--s)) / calc(4 * var(--s)) calc(2 * var(--s));
+  animation: m 1s infinite linear;
+}
+#wave2 {
+  --s: 35px; /* the size of the wave */
+  --b: 15px; /* the thickness of the line*/
+  bottom: 80px;
+  left: -40px;
+  height: calc(2 * var(--s));
+  aspect-ratio: 2.5;
+  display: grid;
+  padding: 0px;
+  filter: contrast(20) hue-rotate(20deg);
+}
+#wave2::before {
+  content: "";
+  --_g: calc(-0.6 * var(--s)), #0000 calc(99% - var(--b)),
+    #ffffff calc(101% - var(--b)) 99%, #0000 101%;
+  --_r: calc(1.166 * var(--s) + var(--b) / 2) at left 50%;
+  background: radial-gradient(var(--_r) bottom var(--_g)) calc(50% - var(--s))
+      calc(50% - var(--s)) / calc(4 * var(--s)) calc(2 * var(--s)),
+    radial-gradient(var(--_r) top var(--_g)) calc(50% + var(--s))
+      calc(50% + var(--s)) / calc(4 * var(--s)) calc(2 * var(--s));
+  animation: m 1s infinite linear;
+}
+#wave3 {
+  --s: 35px; /* the size of the wave */
+  --b: 15px; /* the thickness of the line*/
+  bottom: 180px;
+  left: -40px;
+  height: calc(2 * var(--s));
+  aspect-ratio: 2.5;
+  display: grid;
+  padding: 0px;
+  filter: contrast(20) hue-rotate(20deg);
+}
+#wave3::before {
+  content: "";
+  --_g: calc(-0.6 * var(--s)), #0000 calc(99% - var(--b)),
+    #ffffff calc(101% - var(--b)) 99%, #0000 101%;
+  --_r: calc(1.166 * var(--s) + var(--b) / 2) at left 50%;
+  background: radial-gradient(var(--_r) bottom var(--_g)) calc(50% - var(--s))
+      calc(50% - var(--s)) / calc(4 * var(--s)) calc(2 * var(--s)),
+    radial-gradient(var(--_r) top var(--_g)) calc(50% + var(--s))
+      calc(50% + var(--s)) / calc(4 * var(--s)) calc(2 * var(--s));
+  animation: m 1s infinite linear;
+}
+@keyframes m {
+  to {
+    background-position: calc(50% - 5 * var(--s)) calc(50% - var(--s)),
+      calc(50% - 3 * var(--s)) calc(50% + var(--s));
+  }
+}
+#wave-static {
+  width: 20vw;
+  left: 350px;
+  bottom: -35px;
+}
+#cr-image {
+  width: 30vw;
+  height: 45vw;
+}
+
+#cr-image-oragnisasi {
+  width: 50vw;
+  height: 40vw;
+}
+
+#image-static-team {
+  width: 70vw;
+  height: 18vw;
+}
+
+.justify-text {
+  text-align: justify;
+}
 .bg-glass {
   background-color: hsla(0, 0%, 100%, 0.4) !important;
   backdrop-filter: saturate(200%) blur(25px);
@@ -91,9 +203,27 @@ select {
   border-radius: 20px;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 320px) {
   .background-radial-gradient {
     height: auto;
+  }
+
+  #box1 {
+    display: none;
+  }
+
+  #wave1 {
+    display: none;
+  }
+  #wave2 {
+    display: none;
+  }
+  #wave3 {
+    display: none;
+  }
+
+  #wave-static {
+    display: none;
   }
   #radius-shape-1 {
     height: 0px;
@@ -113,4 +243,85 @@ select {
     background: radial-gradient(#44006b, #ad1fff);
     overflow: hidden;
   }
+}
+
+@media screen and (min-width: 550px) {
+  #box1 {
+    display: block;
+  }
+
+  #wave1 {
+    --s: 35px; /* the size of the wave */
+    --b: 15px; /* the thickness of the line*/
+    bottom: 130px;
+    left: -40px;
+    height: calc(2 * var(--s));
+    aspect-ratio: 2.5;
+    display: grid;
+    padding: 0px;
+    filter: contrast(20) hue-rotate(20deg);
+  }
+  #wave1::before {
+    content: "";
+    --_g: calc(-0.6 * var(--s)), #0000 calc(99% - var(--b)),
+      #ffffff calc(101% - var(--b)) 99%, #0000 101%;
+    --_r: calc(1.166 * var(--s) + var(--b) / 2) at left 50%;
+    background: radial-gradient(var(--_r) bottom var(--_g)) calc(50% - var(--s))
+        calc(50% - var(--s)) / calc(4 * var(--s)) calc(2 * var(--s)),
+      radial-gradient(var(--_r) top var(--_g)) calc(50% + var(--s))
+        calc(50% + var(--s)) / calc(4 * var(--s)) calc(2 * var(--s));
+    animation: m 1s infinite linear;
+  }
+  #wave2 {
+    --s: 35px; /* the size of the wave */
+    --b: 15px; /* the thickness of the line*/
+    bottom: 80px;
+    left: -40px;
+    height: calc(2 * var(--s));
+    aspect-ratio: 2.5;
+    display: grid;
+    padding: 0px;
+    filter: contrast(20) hue-rotate(20deg);
+  }
+  #wave2::before {
+    content: "";
+    --_g: calc(-0.6 * var(--s)), #0000 calc(99% - var(--b)),
+      #ffffff calc(101% - var(--b)) 99%, #0000 101%;
+    --_r: calc(1.166 * var(--s) + var(--b) / 2) at left 50%;
+    background: radial-gradient(var(--_r) bottom var(--_g)) calc(50% - var(--s))
+        calc(50% - var(--s)) / calc(4 * var(--s)) calc(2 * var(--s)),
+      radial-gradient(var(--_r) top var(--_g)) calc(50% + var(--s))
+        calc(50% + var(--s)) / calc(4 * var(--s)) calc(2 * var(--s));
+    animation: m 1s infinite linear;
+  }
+  #wave3 {
+    --s: 35px; /* the size of the wave */
+    --b: 15px; /* the thickness of the line*/
+    bottom: 180px;
+    left: -40px;
+    height: calc(2 * var(--s));
+    aspect-ratio: 2.5;
+    display: grid;
+    padding: 0px;
+    filter: contrast(20) hue-rotate(20deg);
+  }
+  #wave3::before {
+    content: "";
+    --_g: calc(-0.6 * var(--s)), #0000 calc(99% - var(--b)),
+      #ffffff calc(101% - var(--b)) 99%, #0000 101%;
+    --_r: calc(1.166 * var(--s) + var(--b) / 2) at left 50%;
+    background: radial-gradient(var(--_r) bottom var(--_g)) calc(50% - var(--s))
+        calc(50% - var(--s)) / calc(4 * var(--s)) calc(2 * var(--s)),
+      radial-gradient(var(--_r) top var(--_g)) calc(50% + var(--s))
+        calc(50% + var(--s)) / calc(4 * var(--s)) calc(2 * var(--s));
+    animation: m 1s infinite linear;
+  }
+
+  #wave-static {
+    display: block;
+  }
+}
+
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 800px) {
 }
