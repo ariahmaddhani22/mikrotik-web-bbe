@@ -150,7 +150,10 @@
       </section>
       <section class="overflow-hidden" id="short-profile">
         <div class="container d-flex justify-content-center align-items-center">
-          <div class="p-5 fs-4 text-primary-emphasis justify-text">
+          <div
+            class="p-5 fs-5 text-primary-emphasis justify-text"
+            id="short-desc-profile-phone"
+          >
             <p class="pb-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Distinctio dicta atque voluptate aperiam repellendus natus
@@ -202,6 +205,7 @@
       >
         <div
           class="container m-5 p-5 rounded-5 position-relative"
+          id="box-visi-misi"
           style="background-color: #053b50"
         >
           <div
@@ -220,7 +224,7 @@
                     class="carousel-item active d-flex justify-content-center position-relative z-1"
                   >
                     <img
-                      src="https://www.worldphoto.org/sites/default/files/default-media/Piercy.jpg"
+                      src="img/cr-prof 1.jpg"
                       class="rounded-5"
                       alt="..."
                       id="cr-image"
@@ -230,7 +234,7 @@
                     class="carousel-item d-flex justify-content-center position-relative z-1"
                   >
                     <img
-                      src="https://live.staticflickr.com/65535/52279468376_97aab013eb_w.jpg"
+                      src="img/cr-prof 2.jpeg"
                       class="rounded-5"
                       alt="..."
                       id="cr-image"
@@ -240,7 +244,7 @@
                     class="carousel-item d-flex justify-content-center position-relative z-1"
                   >
                     <img
-                      src="https://images.unsplash.com/photo-1688407063687-a211f7c2a0d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80"
+                      src="img/cr-prof 3.jpg"
                       class="rounded-5"
                       alt="..."
                       id="cr-image"
@@ -283,18 +287,22 @@
               />
             </div>
 
-            <div class="col text-white">
-              <h1 class="display-3 fw-bold py-5">VISI</h1>
-              <p class="fs-4 justify-text">
-                Menjadi bank digital pilihan utama masyarakat
-              </p>
-              <h1 class="display-3 fw-bold py-5">MISI</h1>
-              <p class="fs-4 justify-text">
-                Memahami beragam kebutuhan nasabah dan memberikan layanan
-                finansial yang tepat demi tercapainya kepuasan optimal bagi
-                nasabah, dengan memanfaatkan teknologi tepat guna Memberikan
-                nilai tambah bagi para pemangku kepentingan
-              </p>
+            <div class="col text-white d-grid gap-4" id="visi-misi-desc">
+              <div class="d-grid gap-3 pt-5">
+                <h1 class="display-3 fw-bold">VISI</h1>
+                <p class="justify-text">
+                  Menjadi bank digital pilihan utama masyarakat
+                </p>
+              </div>
+              <div class="d-grid gap-3">
+                <h1 class="display-3 fw-bold">MISI</h1>
+                <p class="justify-text">
+                  Memahami beragam kebutuhan nasabah dan memberikan layanan
+                  finansial yang tepat demi tercapainya kepuasan optimal bagi
+                  nasabah, dengan memanfaatkan teknologi tepat guna Memberikan
+                  nilai tambah bagi para pemangku kepentingan
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -389,11 +397,11 @@
         </div>
       </section>
       <section>
-        <div class="container">
+        <div class="container" id="short-tim">
           <h1 class="display-5 fw-bold pt-5" style="color: #176b87">
             Tim Kami
           </h1>
-          <p class="justify-text fs-3 py-4 lh-lg">
+          <p class="justify-text py-4 lh-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
             ducimus ea fugiat repellendus cupiditate voluptate dolorum.
             Consequatur, aperiam commodi corrupti et alias odio voluptate magni
@@ -487,6 +495,58 @@
           </div>
         </div>
       </section>
+      <div class="">
+        <footer
+          class="text-center text-white"
+          style="background-color: #053b50"
+        >
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4 d-flex justify-content-center">
+              <!-- Facebook -->
+              <a class="rounded-circle" href="#" role="button"
+                ><img
+                  src="img/facebook.png"
+                  class="rounded-circle"
+                  id="icon-social"
+                  alt=""
+              /></a>
+
+              <!-- Twitter -->
+              <a class="rounded-circle mx-5" href="#" role="button"
+                ><img
+                  src="img/instagram.png"
+                  class="rounded-circle"
+                  id="icon-social"
+                  alt=""
+              /></a>
+
+              <a class="rounded-circle" href="#" role="button"
+                ><img
+                  src="img/twitter.png"
+                  class="rounded-circle"
+                  id="icon-social"
+                  alt=""
+              /></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"
+              >MDBootstrap.com</a
+            >
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
     </div>
 
     <script type="text/javascript">

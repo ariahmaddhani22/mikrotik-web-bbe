@@ -1,7 +1,7 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .background-radial-gradient {
@@ -150,6 +150,13 @@ body {
   width: 70vw;
   height: 18vw;
 }
+#icon-social {
+  width: 2vw;
+}
+
+#visi-misi-desc p {
+  font-size: 1.5vw;
+}
 
 .justify-text {
   text-align: justify;
@@ -212,6 +219,19 @@ select {
     display: none;
   }
 
+  #cr-image {
+    width: 60vw;
+    height: 85vw;
+  }
+
+  #cr-image-oragnisasi {
+    width: 90vw;
+    height: 80vw;
+  }
+
+  #short-tim p {
+    font-size: 4vw;
+  }
   #wave1 {
     display: none;
   }
@@ -243,6 +263,24 @@ select {
     background: radial-gradient(#44006b, #ad1fff);
     overflow: hidden;
   }
+
+  #short-desc-profile-phone p {
+    font-size: 4vw;
+  }
+
+  #box-visi-misi {
+    margin: 0;
+    padding: 0;
+    width: 120%;
+  }
+
+  #visi-misi-desc p {
+    font-size: 3.5vw;
+  }
+
+  #icon-social {
+    width: 6vw;
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -250,6 +288,30 @@ select {
     display: block;
   }
 
+  #icon-social {
+    width: 2vw;
+  }
+
+  #cr-image-oragnisasi {
+    width: 50vw;
+    height: 40vw;
+  }
+  #cr-image {
+    width: 30vw;
+    height: 45vw;
+  }
+
+  #short-desc-profile-phone p {
+    font-size: 1.5rem;
+  }
+
+  #visi-misi-desc p {
+    font-size: 1.5vw;
+  }
+
+  #short-tim p {
+    font-size: 1.5rem;
+  }
   #wave1 {
     --s: 35px; /* the size of the wave */
     --b: 15px; /* the thickness of the line*/
